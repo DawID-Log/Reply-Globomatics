@@ -31,7 +31,7 @@ export default async function Page() {
           <div key={session.id} className={styles.infoContainer}>
             <h3 className={styles.titleText}>{session.title}</h3>
             {session.speakers?.map((speaker: SpeakerFromSession) => (
-                <h3 className={styles.titleText}>{speaker.name}</h3>
+                <h3 key={speaker.id} className={styles.titleText}>{speaker.name}</h3>
             ))}
             <h5 className={styles.descText}>{session.description}</h5>
             <h4 className={styles.infoText}>Room: {session.room}</h4>

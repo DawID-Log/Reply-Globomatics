@@ -9,7 +9,7 @@ export type Speaker = {
   sessions: SpeakerFromSession[],
 }
 
-export async function fetchSpeakers() {
+async function fetchSpeakers() {
   const result = await fetch(
     "https://raw.githubusercontent.com/DawID-Log/Reply-Globomatics/master/apiRawFile/speakers.json"
   );

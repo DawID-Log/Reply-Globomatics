@@ -1,6 +1,14 @@
-import { fetchSpeakers, Speaker } from "../page";
+import { Speaker } from "../page";
 import { SpeakerFromSession } from "../../page";
 import styles from "../../conference.module.css"
+
+async function fetchSpeakers() {
+    const result = await fetch(
+        "https://raw.githubusercontent.com/DawID-Log/Reply-Globomatics/master/apiRawFile/speakers.json"
+    );
+    const data = await result.json();
+    return data;
+}
 
 async function fetchSpeakerInfo(slug: string) {
     const searchElement = slug.replace("%20", " ");
