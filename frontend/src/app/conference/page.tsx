@@ -3,6 +3,11 @@ import Image from "next/image";
 import conferencePic from "../../images/media-image-1.jpg";
 import styles from "./conference.module.css";
 
+export type SpeakerFromSession = {
+  id: any,
+  name: string,
+}
+
 export default function Page() {
   return (
     <>
