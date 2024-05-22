@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  width: 100%;
+  padding: 20px 0px 20px;
+  background: #212121;
+  color: #fff;
+  text-align: start;
+  justify-content: space-around;
+}
+
+body {
+  margin: 0;
+}
